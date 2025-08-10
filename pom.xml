@@ -8,7 +8,7 @@
     <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>AcousticsToolkit</name>
+    <name>acousticgui</name>
     <url>https://github.com/mhschmieder/acousticsgui</url>
     <description>Acoustics and audio engineering Swing GUI classes for Java.</description>
 
