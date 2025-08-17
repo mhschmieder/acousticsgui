@@ -1,7 +1,7 @@
 /**
  * MIT License
  *
- * Copyright (c) 2020, 2024 Mark Schmieder
+ * Copyright (c) 2020, 2025 Mark Schmieder
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -30,10 +30,10 @@
  */
 package com.mhschmieder.acousticsgui.table;
 
+import java.awt.Color;
+
 import javax.swing.table.DefaultTableCellRenderer;
 
-import com.mhschmieder.fxgraphicstoolkit.paint.ColorConstants;
-import com.mhschmieder.fxgraphicstoolkit.paint.ColorUtilities;
 import com.mhschmieder.guitoolkit.table.ToggleButtonCellRenderer;
 
 public class AcousticsCellRendererFactory {
@@ -41,15 +41,11 @@ public class AcousticsCellRendererFactory {
     public static DefaultTableCellRenderer makeMuteCellRenderer( final float fontSize ) {
         return new ToggleButtonCellRenderer( false,
                                              fontSize,
-                                             "Muted", //$NON-NLS-1$
-                                             "Mute", //$NON-NLS-1$
-                                             ColorUtilities
-                                                     .getColor( ColorConstants.MUTED_BACKGROUND_COLOR ),
-                                             ColorUtilities
-                                                     .getColor( ColorConstants.UNMUTED_BACKGROUND_COLOR ),
-                                             ColorUtilities
-                                                     .getColor( ColorConstants.MUTED_FOREGROUND_COLOR ),
-                                             ColorUtilities
-                                                     .getColor( ColorConstants.UNMUTED_FOREGROUND_COLOR ) );
+                                             "Muted",
+                                             "Mute",
+                                             Color.RED,
+                                             Color.WHITE,
+                                             new Color( 98, 24, 24 ),
+                                             Color.WHITE );
     }
 }
